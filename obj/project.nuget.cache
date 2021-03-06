@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6ysLl1qnCPOFQrN5gG6c8xs5FhstxuBfJ9W4N4c+yhvpL03DE/YnfZa27w+afAehhOcAsXq05YjnZgq5d0QCow==",
+  "dgSpecHash": "13IacOY4+4vxCV2YwAHY5TISNIAqqbSD789j8koL1lv6mliccIeCPOhOBxGV80tNjpmgUIe2IywkzMFMKwiOZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gui\\source\\repos\\CalculadoraCurso\\CalculadoraCurso\\CalculadoraCurso.csproj",
+  "projectFilePath": "C:\\Users\\Gui\\source\\repos\\CalculadoraCurso\\ApiPerson\\ApiPerson.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gui\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Gui\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

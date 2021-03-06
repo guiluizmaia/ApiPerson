@@ -1,0 +1,7 @@
+C:\Users\Gui\source\repos\CalculadoraCurso\ApiPerson\obj\Debug\net5.0\ApiPerson.csprojAssemblyReference.cache
+C:\Users\Gui\source\repos\CalculadoraCurso\ApiPerson\obj\Debug\net5.0\ApiPerson.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gui\source\repos\CalculadoraCurso\ApiPerson\obj\Debug\net5.0\ApiPerson.AssemblyInfoInputs.cache
+C:\Users\Gui\source\repos\CalculadoraCurso\ApiPerson\obj\Debug\net5.0\ApiPerson.AssemblyInfo.cs
+C:\Users\Gui\source\repos\CalculadoraCurso\ApiPerson\obj\Debug\net5.0\ApiPerson.csproj.CoreCompileInputs.cache
+C:\Users\Gui\source\repos\CalculadoraCurso\ApiPerson\obj\Debug\net5.0\ApiPerson.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Gui\source\repos\CalculadoraCurso\ApiPerson\obj\Debug\net5.0\ApiPerson.MvcApplicationPartsAssemblyInfo.cache

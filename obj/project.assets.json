@@ -200,11 +200,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gui\\source\\repos\\CalculadoraCurso\\CalculadoraCurso\\CalculadoraCurso.csproj",
-      "projectName": "CalculadoraCurso",
-      "projectPath": "C:\\Users\\Gui\\source\\repos\\CalculadoraCurso\\CalculadoraCurso\\CalculadoraCurso.csproj",
+      "projectUniqueName": "C:\\Users\\Gui\\source\\repos\\CalculadoraCurso\\ApiPerson\\ApiPerson.csproj",
+      "projectName": "ApiPerson",
+      "projectPath": "C:\\Users\\Gui\\source\\repos\\CalculadoraCurso\\ApiPerson\\ApiPerson.csproj",
       "packagesPath": "C:\\Users\\Gui\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gui\\source\\repos\\CalculadoraCurso\\CalculadoraCurso\\obj\\",
+      "outputPath": "C:\\Users\\Gui\\source\\repos\\CalculadoraCurso\\ApiPerson\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

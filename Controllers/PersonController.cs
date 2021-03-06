@@ -4,79 +4,61 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApiPerson.
 
 namespace CalculadoraCurso.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class PersonController : ControllerBase
     {
        
         private readonly ILogger<PersonController> _logger;
 
-        public PersonController(ILogger<PersonController> logger)
+        private IPersonService _personService;
+
+
+        public PersonController(ILogger<PersonController> logger, IPersonService personService)
         {
             _logger = logger;
+            _personService = personService
         }
 
-        [HttpGet("sum/{firstNumber}/{secondNumber}")]
-        public IActionResult Get(string firstNumber, string secondNumber)
+        [HttpGet]
+        public IActionResult Get()
         {
-            if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
-            {
-                var sum = ConvertToDecimal(firstNumber) + ConvertToDecimal(secondNumber);
-                return Ok(sum.ToString());
-            }
-            return BadRequest("Invalid Input");
+            return Ok(_personService.findAll());
         }
 
-        [HttpGet("sub/{firstNumber}/{secondNumber}")]
-        public IActionResult GetSub(string firstNumber, string secondNumber)
+        [HttpGet("{id}")]
+        public IActionResult Get(long id)
         {
-            if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
-            {
-                var sum = ConvertToDecimal(firstNumber) - ConvertToDecimal(secondNumber);
-                return Ok(sum.ToString());
-            }
-            return BadRequest("Invalid Input");
+            var person = _personService.findById(id);
+            if(person == null) return NotFound();
+            return Ok();
         }
 
-        [HttpGet("div/{firstNumber}/{secondNumber}")]
-        public IActionResult GetDiv(string firstNumber, string secondNumber)
+        [HttpPost]
+        public IActionResult Post([FromBody] Person person)
         {
-            if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
-            {
-                var sum = ConvertToDecimal(firstNumber) / ConvertToDecimal(secondNumber);
-                return Ok(sum.ToString());
-            }
-            return BadRequest("Invalid Input");
+            if(person == null) return BadRequest();
+            return Ok(_personService.Create(person);
         }
 
-        [HttpGet("mult/{firstNumber}/{secondNumber}")]
-        public IActionResult GetMult(string firstNumber, string secondNumber)
+        [HttpPost]
+        public IActionResult Put([FromBody] Person person)
         {
-            if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
-            {
-                var sum = ConvertToDecimal(firstNumber) * ConvertToDecimal(secondNumber);
-                return Ok(sum.ToString());
-            }
-            return BadRequest("Invalid Input");
-        }
-        private decimal ConvertToDecimal(string strNumber)
-        {
-            decimal decimalValue;
-            if(decimal.TryParse(strNumber, out decimalValue))
-            {
-                return decimalValue;
-            }
-            return 0;
+            if(person == null) return BadRequest();
+            return Ok(_personService.Update(person);
         }
 
-        private bool IsNumeric(string strNumber)
+        [HttpDelete("{id}")]
+        public IActionResult Delete(long id)
         {
-            double number;
-            bool isNumber = double.TryParse(strNumber, System.Globalization.NumberStyles.Any, System.Globalization.NumberFormatInfo.InvariantInfo, out number);
-            return isNumber;
+            _personService.Delete(id);
+            if(person == null) return NotFound();
+            return NoContent();
         }
+        
     }
 }

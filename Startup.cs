@@ -1,3 +1,4 @@
+using ApiPerson.Services.Implementations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +29,8 @@ namespace CalculadoraCurso
         {
 
             services.AddControllers();
+
+            services.AddScoped<IPersonService, PersonsServiceImplementation>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CalculadoraCurso", Version = "v1" });

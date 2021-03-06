@@ -1,4 +1,4 @@
-﻿using CalculadoraCurso.Model;
+﻿using ApiPerson.Model;
 using System.Collections.Generic;
 
 namespace CalculadoraCurso.Services.Implementations
