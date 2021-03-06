@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\obj\Debug\net5.0\IntegraçãoBD.csprojAssemblyReference.cache
 C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\obj\Debug\net5.0\IntegraçãoBD.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\obj\Debug\net5.0\IntegraçãoBD.AssemblyInfoInputs.cache
@@ -37,3 +38,12 @@ C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\bin\Debug\net5.0\Newtons
 C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\bin\Debug\net5.0\Pomelo.JsonObject.dll
 C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+=======
+C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\obj\Debug\net5.0\IntegraçãoBD.csprojAssemblyReference.cache
+C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\obj\Debug\net5.0\IntegraçãoBD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\obj\Debug\net5.0\IntegraçãoBD.AssemblyInfoInputs.cache
+C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\obj\Debug\net5.0\IntegraçãoBD.AssemblyInfo.cs
+C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\obj\Debug\net5.0\IntegraçãoBD.csproj.CoreCompileInputs.cache
+C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\obj\Debug\net5.0\IntegraçãoBD.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\obj\Debug\net5.0\IntegraçãoBD.MvcApplicationPartsAssemblyInfo.cache
+>>>>>>> b229451315734d9b753d51cf563749aeefb4c74f
