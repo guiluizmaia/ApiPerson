@@ -1,15 +1,16 @@
-﻿using ApiPerson.Model;
+﻿
+using IntegraçãoBD.Model;
 using System.Collections.Generic;
 
-namespace CalculadoraCurso.Services.Implementations
+namespace IntegraçãoBD.Repository
 {
-    public interface IPersonService
+    public interface IPersonRepository
     {
         Person Create(Person person);
         Person FindByID(long id);
         List<Person> FindAll();
         Person Update(Person person);
         void Delete(long id);
-
+        bool Exists(long id);
     }
 }
