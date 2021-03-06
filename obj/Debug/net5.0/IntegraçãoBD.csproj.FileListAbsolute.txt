@@ -1,0 +1,7 @@
+C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\obj\Debug\net5.0\IntegraçãoBD.csprojAssemblyReference.cache
+C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\obj\Debug\net5.0\IntegraçãoBD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\obj\Debug\net5.0\IntegraçãoBD.AssemblyInfoInputs.cache
+C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\obj\Debug\net5.0\IntegraçãoBD.AssemblyInfo.cs
+C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\obj\Debug\net5.0\IntegraçãoBD.csproj.CoreCompileInputs.cache
+C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\obj\Debug\net5.0\IntegraçãoBD.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Gui\source\repos\IntegraçãoBD\IntegraçãoBD\obj\Debug\net5.0\IntegraçãoBD.MvcApplicationPartsAssemblyInfo.cache

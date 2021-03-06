@@ -4,8 +4,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:3176",
-      "sslPort": 44300
+      "applicationUrl": "http://localhost:9581",
+      "sslPort": 44313
     }
   },
   "profiles": {
@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "CalculadoraCurso": {
+    "IntegraçãoBD": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
