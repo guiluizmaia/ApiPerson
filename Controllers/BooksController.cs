@@ -41,7 +41,7 @@ namespace IntegraçãoBD.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] Books books)
         {
-            if (books != null) return BadRequest();
+            if (books == null) return BadRequest();
             return Ok(_booksBusiness.Create(books));
         }
 

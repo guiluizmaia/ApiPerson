@@ -2,7 +2,7 @@ using IntegraçãoBD.Business;
 using IntegraçãoBD.Business.Implementations;
 using IntegraçãoBD.Model.Context;
 using IntegraçãoBD.Repository;
-using IntegraçãoBD.Repository.Implementations;
+using IntegraçãoBD.Repository.Generic;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -47,9 +47,8 @@ namespace RestWithASPNETUdemy
 
             //Dependency Injection
             services.AddScoped<IPersonBusiness, PersonBusinessImplementation>();
-            services.AddScoped<IPersonRepository, PersonRepositoryImplementation>();
             services.AddScoped<IBooksBusiness, BooksBusinessImplementation>();
-            services.AddScoped<IBooksRepository, BooksRepositoryImplementation>();
+            services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
         }
 
 

@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Model\NovaPasta1\**" />
+    <Compile Remove="Model\NovaPasta2\**" />
+    <Content Remove="Model\NovaPasta1\**" />
+    <Content Remove="Model\NovaPasta2\**" />
+    <EmbeddedResource Remove="Model\NovaPasta1\**" />
+    <EmbeddedResource Remove="Model\NovaPasta2\**" />
+    <None Remove="Model\NovaPasta1\**" />
+    <None Remove="Model\NovaPasta2\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Evolve" Version="2.4.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.2.4" />

@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using IntegraçãoBD.Model.Base;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace IntegraçãoBD.Model
 {
     [Table("person")]
-    public class Person
-    {
-        [Column("id")]
-        public long Id { get; set; }
-        
+    public class Person : BaseEntity
+    {        
         [Column("first_name")]
         public string FirstName { get; set; }
 
