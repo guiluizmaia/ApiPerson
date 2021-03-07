@@ -4,8 +4,8 @@
     "\\Controllers",
     "\\Model",
     "\\Properties",
-    "\\Services",
-    "\\Services\\Implementations"
+    "\\Repository",
+    "\\Repository\\Implementations"
   ],
   "SelectedNode": "\\Controllers\\PersonController.cs",
   "PreviewInSolutionExplorer": false
