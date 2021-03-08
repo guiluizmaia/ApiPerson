@@ -1,17 +1,14 @@
-﻿using IntegraçãoBD.Model;
-using System;
+﻿using IntegraçãoBD.Data.VO;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace IntegraçãoBD.Business
 {
     public interface IBooksBusiness
     {
-        Books Create(Books books);
-        Books FindByID(long id);
-        List<Books> FindAll();
-        Books Update(Books books);
+        BooksVO Create(BooksVO books);
+        BooksVO FindByID(long id);
+        List<BooksVO> FindAll();
+        BooksVO Update(BooksVO books);
         void Delete(long id);
     }
 }

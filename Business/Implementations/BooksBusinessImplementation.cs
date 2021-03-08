@@ -1,4 +1,6 @@
-﻿using IntegraçãoBD.Model;
+﻿using IntegraçãoBD.Data.Converter.Implementations;
+using IntegraçãoBD.Data.VO;
+using IntegraçãoBD.Model;
 using IntegraçãoBD.Repository;
 using System;
 using System.Collections.Generic;
@@ -11,14 +13,19 @@ namespace IntegraçãoBD.Business.Implementations
     {
         private readonly IRepository<Books> _repository;
 
+        private readonly BooksConverter _converter;
+
         public BooksBusinessImplementation(IRepository<Books> repository)
         {
             _repository = repository;
+            _converter = new BooksConverter();
         }
 
-        public Books Create(Books books)
+        public BooksVO Create(BooksVO books)
         {
-            return _repository.Create(books);
+            var booksEntity = _converter.Parse(books);
+            booksEntity = _repository.Create(booksEntity);
+            return _converter.Parse(booksEntity);
         }
 
         public void Delete(long id)
@@ -26,19 +33,21 @@ namespace IntegraçãoBD.Business.Implementations
             _repository.Delete(id);
         }
 
-        public List<Books> FindAll()
+        public List<BooksVO> FindAll()
         {
-            return _repository.FindAll();
+            return _converter.Parse(_repository.FindAll());
         }
 
-        public Books FindByID(long id)
+        public BooksVO FindByID(long id)
         {
-            return _repository.FindByID(id);
+            return _converter.Parse(_repository.FindByID(id));
         }
 
-        public Books Update(Books books)
+        public BooksVO Update(BooksVO books)
         {
-            return _repository.Update(books);
+            var booksEntity = _converter.Parse(books);
+            booksEntity = _repository.Update(booksEntity);
+            return _converter.Parse(booksEntity);
         }
     }
 }

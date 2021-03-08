@@ -1,4 +1,5 @@
 ﻿using IntegraçãoBD.Business;
+using IntegraçãoBD.Data.VO;
 using IntegraçãoBD.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -39,14 +40,14 @@ namespace IntegraçãoBD.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] Books books)
+        public IActionResult Post([FromBody] BooksVO books)
         {
             if (books == null) return BadRequest();
             return Ok(_booksBusiness.Create(books));
         }
 
         [HttpPut]
-        public IActionResult Put([FromBody] Books books)
+        public IActionResult Put([FromBody] BooksVO books)
         {
             if (books != null) return BadRequest();
             return Ok(_booksBusiness.Update(books));
